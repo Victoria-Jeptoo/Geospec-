@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+    <legend>User Personal Information</legend>
+    <div>
+      <label for="username">Username:</label>
+      <input id="username" name="username" type="text" placeholder="username" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" value="joedoe@gmail.com" disabled required>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" name="password" type="password" minlength="8" required>
+    </div>
+    </fieldset>
+
+    <!-- textarea -->
+     <fieldset>
+      <legend>Comments</legend>
+    <label for="comments">Comments:</label>
+    <textarea name="comments" id="comments" placeholder="Enter your comments here..." cols="50" rows="10"></textarea>
+<br>
+    <!-- checkboxes -->
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+    <label for="subscribe">Subscribe to newsletter</label>
+</fieldset>    
+<br>
+      <!-- dropdown list -->
+    <label for="country">Country:</label> 
+  
+    <select name="country" id="country">
+      <option value="select">Select your country</option>
+      <optgroup label="North America">
+      <option value="usa">USA</option>
+      <option value="india">India</option>
+      </optgroup>
+      <optgroup label="South America">
+      <option value="canada">Canada</option>
+      <option value="uk">UK</option>
+      <option value="australia">Australia</option>
+      </optgroup>
+    </select>
+<br>
+   <!-- radio buttons -->
+    <label for="Payment Method">Payment Method:</label>
+    <div>
+    <input type="radio" name="payment" id="Visa">
+    <label for="Visa">Visa</label>
+    </div>
+    <div>
+    <input type="radio" name="payment" id="Mastercard">
+    <label for="Mastercard">Mastercard</label>
+    </div>
+    <div>
+      <input type="radio" name="payment" id="Paypal">
+      <label for="Paypal">Paypal</label>
+    </div>
+    <!-- slider -->
+     <input type="range" min="0" max="10" value="4">
+
+     <br>
+
+   <button type="submit">Submit</button>
+   <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>
